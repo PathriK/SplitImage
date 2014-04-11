@@ -1,0 +1,8 @@
+splitNo = 10;
+heat = imread(heat.jpg);
+org = imread(org.jpg);
+colH = size(heat,2);
+splitSz = colH/splitNo;
+res = [];
+for i = 1:splitNo
+    res = [res heat(:,(i-1)]
